@@ -16,4 +16,4 @@ def check_plagiarism(text1, text2):
     vectorizer = CountVectorizer().fit_transform([text1, text2])
     vectors = vectorizer.toarray()
     cosine_sim = cosine_similarity(vectors)
-    return cosine_sim[0][1] * 100  # Similarity percentage
+    return cosine_sim[0][1] * 100 

@@ -6,16 +6,14 @@ class PlagiarismCheckerApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Plagiarism Checker")
-        self.root.geometry("400x300")  # Set a fixed size for the window
-        self.root.config(bg="#f0f0f0")  # Light grey background
+        self.root.geometry("400x300") 
+        self.root.config(bg="#f0f0f0")  
         self.text1_path = ""
         self.text2_path = ""
 
-        # Frame for content
         self.frame = tk.Frame(root, bg="#f0f0f0")
         self.frame.pack(pady=20)
 
-        # Title Label
         self.title_label = tk.Label(
             self.frame, 
             text="Plagiarism Checker", 
@@ -24,7 +22,6 @@ class PlagiarismCheckerApp:
         )
         self.title_label.pack(pady=10)
 
-        # File selection buttons
         self.select_file1_btn = tk.Button(
             self.frame, 
             text="Select File 1", 
